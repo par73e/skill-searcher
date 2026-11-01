@@ -1,24 +1,21 @@
-﻿# Skill Search
+# Skill Search
 
-Search engine for discovering Codex skills on GitHub. Describe your needs and it finds matching skill repositories for you.
+A Codex skill for finding skills on GitHub. Describe what you need, and it searches for relevant repositories and explains why they may be useful.
 
-## How It Works
+## How it works
 
-Uses AnySearch to run parallel GitHub searches with skill-specific queries, then deduplicates and ranks results by relevance.
+The skill turns your request into search queries, uses AnySearch to find results, and deduplicates the matching repositories. See [SKILL.md](./SKILL.md) for the full workflow.
 
-## Triggers
+## Installation
 
-- "find a skill for..."
-- "search skill that..."
-- "is there a skill that..."
-- "what skill can..."
+Ask Codex to install the `skill-search` skill from `par73e/skill-searcher`.
 
-## Dependencies
+## Example requests
 
-- [AnySearch](https://github.com/anthropics/skills/tree/main/anysearch) — used for web / GitHub search
+- “Find a skill for working with PDFs.”
+- “Search for a skill that can create presentations.”
+- “Is there a skill for analyzing spreadsheets?”
 
-## Install
+## Requirements
 
-```
-skill-installer --repo par73e/LouisGit --path skill-search --name skill-search
-```
+The search workflow uses AnySearch.
