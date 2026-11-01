@@ -1,14 +1,22 @@
-﻿# LouisGit
+# Skill Searcher
 
-Collection of Codex skills and tools.
+A Codex skill for discovering skills on GitHub. Describe what you need, and Skill Search helps you find relevant repositories.
 
-## Skills
+## How it works
 
-### [Skill Search](./skill-search/)
+Skill Search turns your request into search terms, searches GitHub using AnySearch, and presents deduplicated results with descriptions and relevance notes.
 
-Search GitHub for Codex skill repositories matching your needs. Just describe what you want and it finds the right skill for you.
+## Get started
 
-**Install:**
-```
-skill-installer --repo par73e/LouisGit --path skill-search --name skill-search
-```
+Install the [`skill-search`](./skill-search/) skill from this repository using Codex's skill installer. For example, ask Codex:
+
+> Install the `skill-search` skill from `par73e/skill-searcher`.
+
+After installation, ask Codex something like:
+
+- “Find a skill for working with PDFs.”
+- “Is there a skill that can help me create presentations?”
+
+## Requirements
+
+The search workflow uses AnySearch. See the [skill instructions](./skill-search/SKILL.md) for details.
